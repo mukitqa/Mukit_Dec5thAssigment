@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UpsLoginPageTest Suite">
+	<test thread-count="5" name="UpsLoginPageTest">
+		<parameter name="browser" value="ChromeBrowser" />
+		<classes>
+
+			<class name="com.ups.testRunner.UpsLoginTestRunner">
+				<methods>
+					<include name="loginErrorMsgTest" />
+					<exclude name="forgotLinkTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
